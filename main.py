@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from schemas import Users, UsersId
 
-app = FastAPI()
+app = FastAPI(root_path="/service")
 
 users: list[UsersId] = []
 
